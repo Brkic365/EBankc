@@ -11,23 +11,23 @@ import { motion } from "framer-motion";
 export function MobileMenu({ close }) {
   const socialMedia = [
     {
-      link: "www.twitter.com",
+      link: "https://twitter.com/home",
       img: "/images/footer/social_media/twitter.svg",
     },
     {
-      link: "www.instagram.com",
+      link: "https://www.instagram.com/",
       img: "/images/footer/social_media/instagram.svg",
     },
     {
-      link: "www.reddit.com",
+      link: "https://www.reddit.com/",
       img: "/images/footer/social_media/reddit.svg",
     },
     {
-      link: "www.youtube.com",
+      link: "https://www.youtube.com/",
       img: "/images/footer/social_media/youtube.svg",
     },
     {
-      link: "www.discord.com",
+      link: "https://discord.com/",
       img: "/images/footer/social_media/discord.svg",
     },
   ];
@@ -75,12 +75,16 @@ export function MobileMenu({ close }) {
       <div className={styles.social_media}>
         {socialMedia.map((media, i) => (
           <Link key={i} href={media.link}>
-            <img src={media.img} alt="Icon of social media" />
+            <img
+              onClick={() => close(true)}
+              src={media.img}
+              alt="Icon of social media"
+            />
           </Link>
         ))}
       </div>
       <Link href="/login">
-        <button>Log In</button>
+        <button onClick={() => close(true)}>Log In</button>
       </Link>
     </div>
   );
@@ -192,7 +196,7 @@ function Navbar() {
               FAQ
             </a>
           </Link>
-          <Link href="/faq">
+          <Link href="/login">
             <button>Log In</button>
           </Link>
         </div>

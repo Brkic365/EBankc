@@ -1,32 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../styles/Footer.module.scss";
 
 import Link from "next/link";
 
-import { motion } from "framer-motion";
-
 function Footer() {
-  const [helpOpen, setHelpOpen] = useState(false);
-
   const socialMedia = [
     {
-      link: "www.twitter.com",
+      link: "https://twitter.com/home",
       img: "/images/footer/social_media/twitter.svg",
     },
     {
-      link: "www.instagram.com",
+      link: "https://www.instagram.com/",
       img: "/images/footer/social_media/instagram.svg",
     },
     {
-      link: "www.reddit.com",
+      link: "https://www.reddit.com/",
       img: "/images/footer/social_media/reddit.svg",
     },
     {
-      link: "www.youtube.com",
+      link: "https://www.youtube.com/",
       img: "/images/footer/social_media/youtube.svg",
     },
     {
-      link: "www.discord.com",
+      link: "https://discord.com/",
       img: "/images/footer/social_media/discord.svg",
     },
   ];
