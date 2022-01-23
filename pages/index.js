@@ -104,7 +104,7 @@ export default function Home() {
           <img src="/images/home/phone.png" alt="Graphic of phone" />
           <div className={styles.advantages}>
             {pros.map((pro, i) => (
-              <div className={styles.advantage}>
+              <div className={styles.advantage} key={i}>
                 <img src="/images/home/checkmark.svg" alt="Icon of checkmark" />
                 <div className={styles.content}>
                   <h4>{pro.title}</h4>
