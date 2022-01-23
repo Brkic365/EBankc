@@ -1,0 +1,45 @@
+.asset {
+  border-style: solid none none;
+  border-width: 16px 8px;
+  border-radius: 8px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 2rem 0.5rem;
+
+  .token {
+    width: 20% !important;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 0.2rem;
+  }
+
+  p {
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #4d72e5;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .asset {
+    border-width: 24px 12px;
+
+    .token {
+      width: 30% !important;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 0.4rem;
+    }
+
+    p {
+      font-size: 1.1rem !important;
+      margin-top: 0.6rem;
+    }
+  }
+}
