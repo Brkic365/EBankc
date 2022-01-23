@@ -83,7 +83,9 @@ export default function Home() {
               Earn Interest, borrow, and exchange digital assets at competitive
               rates
             </p>
-            <button>Create Account</button>
+            <Link href="/signup">
+              <button>Create Account</button>
+            </Link>
           </div>
         </section>
 
