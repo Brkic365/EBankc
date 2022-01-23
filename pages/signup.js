@@ -4,7 +4,7 @@ import styles from "../styles/Login.module.scss";
 import Link from "next/link";
 import Head from "next/head";
 
-function signup() {
+function Signup() {
   const [isVisible, setIsVisible] = useState(false);
 
   const [email, setEmail] = useState(null);
@@ -114,4 +114,4 @@ function signup() {
   );
 }
 
-export default signup;
+export default Signup;

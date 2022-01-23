@@ -4,7 +4,7 @@ import styles from "../styles/Login.module.scss";
 import Link from "next/link";
 import Head from "next/head";
 
-function login() {
+function Login() {
   const [isVisible, setIsVisible] = useState(false);
 
   const [email, setEmail] = useState(null);
@@ -79,4 +79,4 @@ function login() {
   );
 }
 
-export default login;
+export default Login;
