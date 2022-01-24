@@ -14,7 +14,7 @@
     cursor: pointer;
     font-size: 0.9rem;
     color: white;
-    background-color: #4d72e5;
+    background-color: #01d394;
     border-radius: 0.5rem;
     border: none;
     width: 100%;
@@ -23,7 +23,7 @@
     transition: 0.3s ease-in-out;
 
     &:hover {
-      background-color: darken(#4d72e5, 10%);
+      background-color: darken(#01d394, 10%);
     }
   }
 
@@ -32,7 +32,7 @@
     position: fixed;
     right: 1rem;
     bottom: 1rem;
-    background-color: #4d72e5;
+    background-color: #01d394;
     border-radius: 50%;
     z-index: 10;
     transition: 0.3s ease-in-out;
@@ -40,7 +40,7 @@
     height: 3rem;
 
     &:hover {
-      background-color: darken(#4d72e5, 10%);
+      background-color: darken(#01d394, 10%);
     }
 
     img {
@@ -147,7 +147,7 @@
       h1 {
         font-size: 1.4rem;
         margin-left: 0.5rem;
-        color: #4d72e5;
+        color: #01d394;
       }
     }
   }
@@ -236,12 +236,12 @@
           transition: 0.2s ease-in-out;
 
           &:hover {
-            color: #4d72e5;
+            color: #01d394;
           }
         }
 
         .open {
-          color: #4d72e5;
+          color: #01d394;
         }
       }
     }

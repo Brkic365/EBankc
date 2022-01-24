@@ -86,6 +86,14 @@ function Footer() {
 
   return (
     <footer className={styles.footer}>
+      <div className={styles.topText}>
+        <h2>Start Earning on your holdings</h2>
+        <p>Unlock daily interest on your cryptos with as little as $500.</p>
+        <p>Withdraw your assets whenever you want.</p>
+        <Link href="/signup">
+          <button>Sign Up</button>
+        </Link>
+      </div>
       <img
         className={styles.logo}
         src="/images/navbar/logo.svg"

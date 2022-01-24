@@ -19,7 +19,7 @@
       font-weight: bold;
       line-height: 24px;
       font-size: 1.1rem;
-      color: #00aff2;
+      color: #01d394;
     }
 
     p {
@@ -32,7 +32,7 @@
       cursor: pointer;
       font-size: 0.9rem;
       color: white;
-      background-color: #4d72e5;
+      background-color: #01d394;
       border-radius: 0.5rem;
       border: none;
       width: 100%;
@@ -42,7 +42,7 @@
       margin: 2rem 0;
 
       &:hover {
-        background-color: darken(#4d72e5, 10%);
+        background-color: darken(#01d394, 10%);
       }
     }
 
@@ -128,7 +128,7 @@
       }
 
       h5 {
-        color: #00aff2;
+        color: #01d394;
         font-weight: 500;
         font-size: 1.1rem;
         margin-top: 1rem;
@@ -393,6 +393,31 @@
     .main {
       width: 80%;
 
+      h1 {
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+      }
+
+      h2 {
+        font-size: 2.7rem;
+        line-height: 3.5rem;
+      }
+
+      h4 {
+        font-size: 1.6rem;
+        line-height: 3rem;
+        margin: 2rem 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      button {
+        font-size: 1.3rem;
+        width: 15rem;
+      }
+
       .start {
         img {
           width: 60%;
@@ -409,13 +434,24 @@
           margin-top: 2rem;
 
           .advantage {
-            margin: 3rem 0;
+            margin: 4rem 0;
+
+            .content {
+              h4 {
+                font-size: 1.6rem;
+              }
+            }
 
             img {
+              margin-top: 1rem;
               width: 1.5rem;
             }
           }
         }
+      }
+
+      .pros img {
+        width: 45%;
       }
 
       .token img {

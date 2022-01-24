@@ -40,7 +40,7 @@ export default function Home() {
       img: "ebct.png",
       name: "EBCT",
       increase: 4,
-      color: "#3263cc",
+      color: "#01D394",
     },
   ];
 
@@ -152,7 +152,7 @@ export default function Home() {
         {/* Token Section */}
 
         <section className={styles.token}>
-          <img src="/images/home/token.png" alt="Icon of token" />
+          <img src="/images/home/token.svg" alt="Icon of token" />
           <div className={styles.text}>
             <h2>The EBankc Utility Token (EBCT)</h2>
             <h4>The EBCT token powers the EBankc ecosystem</h4>
