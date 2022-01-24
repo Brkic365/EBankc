@@ -3,7 +3,7 @@ import styles from "../styles/notFound.module.scss";
 
 import { useRouter } from "next/router";
 
-function notFoundPage() {
+function NotFoundPage() {
   const router = useRouter();
 
   return (
@@ -18,4 +18,4 @@ function notFoundPage() {
   );
 }
 
-export default notFoundPage;
+export default NotFoundPage;
