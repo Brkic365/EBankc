@@ -1,0 +1,319 @@
+.about {
+  .main {
+    padding: 3rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    h2 {
+      font-size: 1.5rem;
+      line-height: 35px;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 25px;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .start {
+      width: 95%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      p {
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      img {
+        margin-top: 1rem;
+        width: 100%;
+      }
+
+      ul {
+        margin: 2rem auto;
+        width: fit-content;
+        li {
+          text-align: left;
+          margin: 1rem 0;
+        }
+      }
+    }
+
+    .backed,
+    .partners,
+    .whyChoose,
+    .team {
+      width: 100%;
+
+      .companies,
+      .chooseReasons,
+      .teamMembers {
+        width: 100%;
+        display: -ms-grid;
+        display: grid;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        place-items: center;
+        -ms-grid-columns: (minmax(10em, 1fr)) [auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+        -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+      }
+    }
+
+    .backed,
+    .partners {
+      .companies {
+        -ms-grid-columns: (minmax(12em, 1fr)) [auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+
+        .company {
+          cursor: pointer;
+          border-radius: 0.5rem;
+          height: 8rem;
+          width: 100%;
+          border: 1px solid transparent;
+          background-color: white;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            box-shadow: none;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+          }
+
+          img {
+            max-width: 60%;
+            max-height: 5rem;
+          }
+        }
+      }
+    }
+
+    .whyChoose {
+      .chooseReasons {
+        -ms-grid-columns: (minmax(12em, 1fr)) [auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+
+        .reason {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding: 1.5rem 1rem;
+          height: 9rem;
+          border-radius: 1rem;
+          width: 100%;
+          background-color: white;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          position: relative;
+
+          img {
+            width: 3rem;
+            margin-bottom: 1rem;
+          }
+
+          p {
+            width: 90%;
+            top: 60%;
+            position: absolute;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #013220;
+          }
+        }
+      }
+    }
+
+    .team {
+      p {
+        margin-bottom: 2rem;
+      }
+
+      .teamMembers {
+        -ms-grid-columns: (minmax(10em, 1fr)) [auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+
+        .member {
+          img {
+            border: 5px solid white;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+              rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            border-radius: 50%;
+            width: 80%;
+            aspect-ratio: 1/1;
+          }
+
+          h4 {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            color: #013220;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .about {
+    .main {
+      padding-top: 5rem;
+
+      h2 {
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .start {
+        img {
+          width: 80%;
+        }
+
+        ul {
+          li {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .about {
+    .main {
+      padding-top: 6rem;
+
+      h2 {
+        font-size: 3rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+      }
+
+      .start {
+        width: 80%;
+        img {
+          width: 100%;
+        }
+
+        p {
+          width: 80%;
+        }
+
+        ul {
+          li {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about {
+    .main {
+      .backed,
+      .partners {
+        width: 70%;
+
+        .companies {
+          -ms-grid-columns: (minmax(15em, 1fr)) [auto-fit];
+          grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+        }
+      }
+
+      .whyChoose,
+      .team {
+        width: 50%;
+
+        .chooseReasons,
+        .teamMembers {
+          grid-column-gap: 2em;
+          grid-row-gap: 2em;
+          -ms-grid-columns: (minmax(14em, 1fr)) [auto-fit];
+          grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .about {
+    .main {
+      .start {
+        width: 70%;
+        img {
+          width: 90%;
+        }
+
+        p {
+          width: 80%;
+        }
+
+        ul {
+          li {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .about {
+    .main {
+      p {
+        font-size: 1.3rem;
+        line-height: 28px;
+      }
+
+      .start ul li {
+        font-size: 1.5rem;
+      }
+
+      .backed,
+      .partners {
+        width: 50%;
+
+        .companies {
+          -ms-grid-columns: (minmax(16em, 1fr)) [auto-fit];
+          grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+        }
+      }
+
+      .whyChoose,
+      .team {
+        width: 40%;
+
+        .chooseReasons {
+          -ms-grid-columns: (minmax(18em, 1fr)) [auto-fit];
+          grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+        }
+      }
+    }
+  }
+}

@@ -40,7 +40,7 @@ export default function Home() {
       img: "ebct.png",
       name: "EBCT",
       increase: 4,
-      color: "#01D394",
+      color: "#013220",
     },
   ];
 

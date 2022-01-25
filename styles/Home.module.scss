@@ -19,7 +19,7 @@
       font-weight: bold;
       line-height: 24px;
       font-size: 1.1rem;
-      color: #01d394;
+      color: #013220;
     }
 
     p {
@@ -32,7 +32,7 @@
       cursor: pointer;
       font-size: 0.9rem;
       color: white;
-      background-color: #01d394;
+      background-color: #013220;
       border-radius: 0.5rem;
       border: none;
       width: 100%;
@@ -42,7 +42,7 @@
       margin: 2rem 0;
 
       &:hover {
-        background-color: darken(#01d394, 10%);
+        background-color: darken(#013220, 10%);
       }
     }
 
@@ -128,7 +128,7 @@
       }
 
       h5 {
-        color: #01d394;
+        color: #013220;
         font-weight: 500;
         font-size: 1.1rem;
         margin-top: 1rem;
@@ -310,7 +310,7 @@
       .start {
         flex-direction: row-reverse;
         place-content: space-between;
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         margin-bottom: 5rem;
 

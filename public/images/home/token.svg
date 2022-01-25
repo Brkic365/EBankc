@@ -17,7 +17,7 @@
     <filter id="Ellipse_10" x="169.38" y="0" width="2318.252" height="2494.46" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="10" result="blur-3"/>
-      <feFlood flood-color="#01d394"/>
+      <feFlood flood-color="#013220"/>
       <feComposite operator="in" in2="blur-3"/>
       <feComposite in="SourceGraphic"/>
     </filter>
@@ -32,7 +32,7 @@
     <filter id="Ellipse_11" x="434.519" y="320.812" width="1803.557" height="1848.239" filterUnits="userSpaceOnUse">
       <feOffset dx="8" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="2.5" result="blur-5"/>
-      <feFlood flood-color="#01d394"/>
+      <feFlood flood-color="#013220"/>
       <feComposite operator="in" in2="blur-5"/>
       <feComposite in="SourceGraphic"/>
     </filter>
@@ -51,14 +51,14 @@
     </g>
     <g id="Group_9" data-name="Group 9" transform="translate(542 -2413)">
       <g data-type="innerShadowGroup">
-        <ellipse id="Ellipse_9-2" data-name="Ellipse 9" cx="1181.972" cy="1202.668" rx="1181.972" ry="1202.668" transform="translate(0 0)" fill="#01d394"/>
+        <ellipse id="Ellipse_9-2" data-name="Ellipse 9" cx="1181.972" cy="1202.668" rx="1181.972" ry="1202.668" transform="translate(0 0)" fill="#013220"/>
         <g transform="matrix(1, -0.02, 0.02, 1, -94.51, -11.99)" filter="url(#Ellipse_9)">
           <ellipse id="Ellipse_9-3" data-name="Ellipse 9" cx="1181.972" cy="1202.668" rx="1181.972" ry="1202.668" transform="matrix(1, 0.02, -0.02, 1, 94.29, 13.64)" fill="#fff"/>
         </g>
       </g>
       <g data-type="innerShadowGroup">
         <g transform="matrix(1, -0.02, 0.02, 1, -94.51, -11.99)" filter="url(#Ellipse_10)">
-          <ellipse id="Ellipse_10-3" data-name="Ellipse 10" cx="1108.386" cy="1198.068" rx="1108.386" ry="1198.068" transform="matrix(1, 0.02, -0.02, 1, 241.2, 30)" fill="#01d394"/>
+          <ellipse id="Ellipse_10-3" data-name="Ellipse 10" cx="1108.386" cy="1198.068" rx="1108.386" ry="1198.068" transform="matrix(1, 0.02, -0.02, 1, 241.2, 30)" fill="#013220"/>
         </g>
         <g transform="matrix(1, -0.02, 0.02, 1, -94.51, -11.99)" filter="url(#Ellipse_10-2)">
           <ellipse id="Ellipse_10-4" data-name="Ellipse 10" cx="1108.386" cy="1198.068" rx="1108.386" ry="1198.068" transform="matrix(1, 0.02, -0.02, 1, 241.2, 30)" fill="#fff"/>
@@ -66,7 +66,7 @@
       </g>
       <g data-type="innerShadowGroup">
         <g transform="matrix(1, -0.02, 0.02, 1, -94.51, -11.99)" filter="url(#Ellipse_11)">
-          <ellipse id="Ellipse_11-3" data-name="Ellipse 11" cx="878.43" cy="901.426" rx="878.43" ry="901.426" transform="matrix(1, 0.02, -0.02, 1, 465.98, 328.31)" fill="#01d394"/>
+          <ellipse id="Ellipse_11-3" data-name="Ellipse 11" cx="878.43" cy="901.426" rx="878.43" ry="901.426" transform="matrix(1, 0.02, -0.02, 1, 465.98, 328.31)" fill="#013220"/>
         </g>
         <g transform="matrix(1, -0.02, 0.02, 1, -94.51, -11.99)" filter="url(#Ellipse_11-2)">
           <ellipse id="Ellipse_11-4" data-name="Ellipse 11" cx="878.43" cy="901.426" rx="878.43" ry="901.426" transform="matrix(1, 0.02, -0.02, 1, 465.98, 328.31)" fill="#fff"/>
