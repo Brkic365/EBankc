@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/notFound.module.scss";
+import Head from "next/head";
 
 import { useRouter } from "next/router";
 
