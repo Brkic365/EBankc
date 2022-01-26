@@ -41,7 +41,7 @@ function Corporates() {
         {/* UX Section */}
 
         <section className={styles.userExp}>
-          <img src="" alt="Icon of laptop" />
+          <img src="/images/corporates/laptop.png" alt="Icon of laptop" />
           <div className={styles.content}>
             <h5>Leading User Experience</h5>
             <h2>Fast and Accessible</h2>
@@ -55,7 +55,10 @@ function Corporates() {
         {/* Security Section */}
 
         <section className={styles.security}>
-          <img src="" alt="Icon of laptop" />
+          <img
+            src="/images/corporates/laptop_and_phone.png"
+            alt="Icon of laptop"
+          />
           <div className={styles.content}>
             <h5>Safety First</h5>
             <h2>Maximum Security and Insurance on Custodial Assets</h2>
@@ -73,7 +76,7 @@ function Corporates() {
         {/* License Section */}
 
         <section className={styles.license}>
-          <img src="" alt="Icon of shield" />
+          <img src="/images/corporates/shield.png" alt="Icon of shield" />
           <div className={styles.content}>
             <h5>Know Your Business</h5>
             <h2>Licensed and Regulated Defi System</h2>
@@ -96,7 +99,9 @@ function Corporates() {
           <div className={styles.steps}>
             {steps.map((step, i) => (
               <div className={styles.step} key={i}>
-                <img src="" alt="Icon of number" />
+                <div className={styles.number}>
+                  <h3>{i + 1}.</h3>
+                </div>
                 <p>{step}</p>
               </div>
             ))}
