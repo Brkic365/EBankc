@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/About.module.scss";
 import Head from "next/head";
 
-function about() {
+function About() {
   const backedCompanies = [
     "bitgo.jpeg",
     "onramper.png",
@@ -184,4 +184,4 @@ function about() {
   );
 }
 
-export default about;
+export default About;

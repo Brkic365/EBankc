@@ -96,6 +96,33 @@ function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
 
+  const links = [
+    {
+      name: "About",
+      href: "/about",
+    },
+    {
+      name: "Token",
+      href: "/token",
+    },
+    {
+      name: "Corporates",
+      href: "/corporates",
+    },
+    {
+      name: "Blog",
+      href: "/blog",
+    },
+    {
+      name: "Stats",
+      href: "/stats",
+    },
+    {
+      name: "FAQ",
+      href: "/faq",
+    },
+  ];
+
   const mobileMenuVariants = {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: "100%" },
@@ -104,6 +131,11 @@ function Navbar() {
   const helpVariants = {
     open: { opacity: 1, y: 0 },
     closed: { opacity: 0, y: "100%" },
+  };
+
+  const linkVariants = {
+    active: { opacity: 1, y: 0 },
+    unactive: { opacity: 0, y: "100%" },
   };
 
   return (
@@ -154,48 +186,27 @@ function Navbar() {
         </motion.div>
 
         <div className={styles.links}>
-          <Link href="/about">
-            <a
-              className={router.pathname === "/about" ? styles.open : undefined}
-            >
-              About
-            </a>
-          </Link>
-          <Link href="/token">
-            <a
-              className={router.pathname === "/token" ? styles.open : undefined}
-            >
-              Token
-            </a>
-          </Link>
-          <Link href="/corporates">
-            <a
-              className={
-                router.pathname === "/corporates" ? styles.open : undefined
-              }
-            >
-              Corporates
-            </a>
-          </Link>
-          <Link href="/blog">
-            <a
-              className={router.pathname === "/blog" ? styles.open : undefined}
-            >
-              Blog
-            </a>
-          </Link>
-          <Link href="/stats">
-            <a
-              className={router.pathname === "/stats" ? styles.open : undefined}
-            >
-              Stats
-            </a>
-          </Link>
-          <Link href="/faq">
-            <a className={router.pathname === "/faq" ? styles.open : undefined}>
-              FAQ
-            </a>
-          </Link>
+          {links.map((link, i) => (
+            <Link href={link.href}>
+              <div className={styles.link}>
+                <a
+                  className={
+                    router.pathname === link.href ? styles.open : undefined
+                  }
+                >
+                  {link.name}
+                </a>
+                <motion.div
+                  className={styles.linkUnderline}
+                  animate={
+                    router.pathname === link.href ? "active" : "unactive"
+                  }
+                  transition={{ duration: 0.3, type: "tween" }}
+                  variants={linkVariants}
+                />
+              </div>
+            </Link>
+          ))}
           <Link href="/login">
             <button>Log In</button>
           </Link>
