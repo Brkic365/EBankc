@@ -187,7 +187,7 @@ function Navbar() {
 
         <div className={styles.links}>
           {links.map((link, i) => (
-            <Link href={link.href}>
+            <Link href={link.href} key={i}>
               <div className={styles.link}>
                 <a
                   className={
