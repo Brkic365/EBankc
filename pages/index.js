@@ -7,37 +7,37 @@ import styles from "../styles/Home.module.scss";
 export default function Home() {
   const assets = [
     {
-      img: "btc.png",
+      img: "btc.webp",
       name: "BTC",
       increase: 8,
       color: "#f7931a",
     },
     {
-      img: "eth.png",
+      img: "eth.webp",
       name: "ETH",
       increase: 8,
       color: "#627ee9",
     },
     {
-      img: "bnb.png",
+      img: "bnb.webp",
       name: "BNB",
       increase: 6,
       color: "#f0b90b",
     },
     {
-      img: "usdc.png",
+      img: "usdc.webp",
       name: "USDC",
       increase: 9,
       color: "#2775ca",
     },
     {
-      img: "usdt.png",
+      img: "usdt.webp",
       name: "USDT",
       increase: 9,
       color: "#26a17a",
     },
     {
-      img: "ebct.png",
+      img: "ebct.webp",
       name: "EBCT",
       increase: 4,
       color: "#013220",
@@ -75,7 +75,7 @@ export default function Home() {
 
         <section className={styles.start}>
           <img
-            src="/images/home/laptop_and_phone.png"
+            src="/images/home/laptop_and_phone.webp"
             alt="Graphic of laptop and phone"
           />
           <div className={styles.content}>
@@ -104,7 +104,7 @@ export default function Home() {
         {/* Pros Section */}
 
         <section className={styles.pros}>
-          <img src="/images/home/phone.png" alt="Graphic of phone" />
+          <img src="/images/home/phone.webp" alt="Graphic of phone" />
           <div className={styles.advantages}>
             {pros.map((pro, i) => (
               <div className={styles.advantage} key={i}>
@@ -121,7 +121,7 @@ export default function Home() {
         {/* Earn Section */}
 
         <section className={styles.earn}>
-          <img src="/images/home/earn.png" alt="Earn icon" />
+          <img src="/images/home/earn.webp" alt="Earn icon" />
           <div className={styles.text}>
             <h2>Earn short term Interest</h2>
             <h4>Increase your reward level by holding more EBCT token</h4>
@@ -135,7 +135,7 @@ export default function Home() {
         {/* Utility Section */}
 
         <section className={styles.utility}>
-          <img src="/images/home/safe.png" alt="Safe icon" />
+          <img src="/images/home/safe.webp" alt="Safe icon" />
           <div className={styles.text}>
             <h2>Integrated Utility Card</h2>
             <h4>EBankc Card (coming soon)</h4>

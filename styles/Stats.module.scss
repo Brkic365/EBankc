@@ -1,0 +1,415 @@
+.stats {
+  .main {
+    padding: 1.5rem;
+    padding-top: 5rem;
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .start {
+      .cards {
+        margin-top: 3rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .firstCol,
+        .secondCol {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        .card {
+          cursor: pointer;
+          height: 12rem;
+          margin: 0.5rem 0;
+          border-radius: 0.5rem;
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 2rem 1rem;
+          background-color: white;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          transition: 0.5s ease-in-out;
+          img {
+            height: 2rem;
+            margin-bottom: 3rem;
+            opacity: 1;
+            transition: 0.5s ease-in-out;
+          }
+
+          h3 {
+            font-weight: 600;
+            color: #013220;
+            transition: 0.5s ease-in-out;
+          }
+
+          p {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            transition: 0.5s ease-in-out;
+          }
+
+          &:hover {
+            background: #013220;
+            img {
+              transform: translateY(-100%);
+              opacity: 0;
+            }
+
+            h3 {
+              color: white;
+              margin-top: -2rem;
+            }
+
+            p {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    .ebctStats {
+      margin-top: 5rem;
+      .mainStats .mainStat,
+      .miniStats .miniStat,
+      .contractStat {
+        width: 100%;
+        background-color: white;
+        padding: 1rem 0;
+        padding-bottom: 0.5rem;
+        border-radius: 0.4rem;
+        margin: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        place-content: space-between;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+
+        h3,
+        h4 {
+          margin-bottom: 1rem;
+        }
+
+        p {
+          padding-top: 0.5rem;
+          border-top: 2px solid #01322049;
+          width: 100%;
+          font-size: 0.9rem;
+        }
+      }
+
+      .mainStats {
+        .mainStat {
+          background: rgb(0, 19, 12);
+          background: linear-gradient(
+            90deg,
+            rgba(0, 19, 12, 1) 0%,
+            rgba(1, 50, 32, 1) 100%
+          );
+          color: white;
+
+          h3 {
+            font-size: 2.3rem;
+          }
+
+          p {
+            font-size: 1.3rem;
+            border-top: 2px solid rgba(255, 255, 255, 0.623);
+          }
+        }
+      }
+
+      .miniStats .miniStat,
+      .contractStat {
+        padding-top: 1.5rem;
+        h4 {
+          margin-bottom: 1.5rem;
+          font-size: 1.3rem;
+          color: #013220;
+        }
+      }
+
+      .contractStat {
+        h4 {
+          font-size: 0.6rem;
+        }
+      }
+    }
+
+    .community {
+      margin-top: 5rem;
+
+      .communityCircles {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .communityCircle {
+          margin: 2rem 0;
+          background: white;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          width: 13rem;
+          height: 13rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          h3 {
+            font-size: 2.3rem;
+            color: #013220;
+          }
+
+          p {
+            font-weight: 600;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .stats .main {
+    .ebctStats .contractStat {
+      h4 {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .stats .main {
+    .ebctStats .contractStat {
+      h4 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .stats .main {
+    padding-top: 8rem;
+
+    .start {
+      .cards {
+        .card img {
+          height: 3rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .stats .main {
+    padding: 8rem;
+
+    .community {
+      .communityCircles {
+        .communityCircle {
+          height: 20rem;
+          width: 20rem;
+
+          h3 {
+            font-size: 3rem;
+          }
+
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .stats .main {
+    .ebctStats {
+      .contractStat {
+        h4 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .stats .main {
+    padding: 8rem 3rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    .start {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      place-content: space-between;
+
+      .text {
+        text-align: left;
+        width: 40%;
+
+        h1 {
+          font-size: 4rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+
+      .cards {
+        width: 50%;
+        flex-direction: row;
+
+        .firstCol,
+        .secondCol {
+          .card {
+            width: 90%;
+          }
+        }
+
+        .secondCol {
+          margin-top: 8rem;
+        }
+      }
+    }
+
+    .ebctStats {
+      .mainStats,
+      .miniStats {
+        display: flex;
+        flex-direction: row;
+        place-content: space-between;
+        margin: 1rem 0;
+
+        .mainStat {
+          width: 48%;
+        }
+
+        .miniStat {
+          margin: 0 0.5rem;
+        }
+      }
+
+      .miniStats {
+        margin: 1rem -0.5rem;
+      }
+
+      .contractStat {
+        margin-top: 2rem;
+      }
+    }
+
+    .community {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .communityCircles {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        place-content: space-between;
+        width: 75%;
+
+        .communityCircle {
+          width: 18rem;
+          height: 18rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .stats .main {
+    .ebctStats {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .mainStats,
+      .miniStats,
+      .contractStat {
+        width: 55rem;
+
+        .miniStat {
+          h4 {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .contractStat h4 {
+        font-size: 1.1rem;
+      }
+    }
+
+    .community {
+      .communityCircles {
+        width: 40rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .stats .main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    .start {
+      width: 80rem;
+      .text {
+        margin-left: 12rem;
+        width: 30%;
+      }
+
+      .cards {
+        width: 40%;
+
+        .card {
+          margin: 1rem 0;
+          height: 16rem;
+
+          img {
+            margin-bottom: 6rem;
+          }
+        }
+      }
+    }
+  }
+}

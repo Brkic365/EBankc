@@ -18,7 +18,6 @@ function Corporates() {
           name="description"
           content="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         {/* Start Section */}
@@ -41,7 +40,7 @@ function Corporates() {
         {/* UX Section */}
 
         <section className={styles.userExp}>
-          <img src="/images/corporates/laptop.png" alt="Icon of laptop" />
+          <img src="/images/corporates/laptop.webp" alt="Icon of laptop" />
           <div className={styles.content}>
             <h5>Leading User Experience</h5>
             <h2>Fast and Accessible</h2>
@@ -56,7 +55,7 @@ function Corporates() {
 
         <section className={styles.security}>
           <img
-            src="/images/corporates/laptop_and_phone.png"
+            src="/images/corporates/laptop_and_phone.webp"
             alt="Icon of laptop"
           />
           <div className={styles.content}>
@@ -76,7 +75,7 @@ function Corporates() {
         {/* License Section */}
 
         <section className={styles.license}>
-          <img src="/images/corporates/shield.png" alt="Icon of shield" />
+          <img src="/images/corporates/shield.webp" alt="Icon of shield" />
           <div className={styles.content}>
             <h5>Know Your Business</h5>
             <h2>Licensed and Regulated Defi System</h2>

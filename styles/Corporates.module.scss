@@ -46,7 +46,7 @@
       width: 100%;
       padding: 5rem 2rem;
       background: linear-gradient(0deg, #013220, hsla(0, 0%, 100%, 0) 44%),
-        url("../public/images/corporates/bg.png");
+        url("../public/images/corporates/bg.webp");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center top;
@@ -88,7 +88,11 @@
         rgba(1, 50, 32, 1) 100%
       );
       padding: 3rem 2rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       .steps {
+        width: fit-content;
         margin-top: 3rem;
         display: -ms-grid;
         display: grid;
@@ -269,7 +273,7 @@
         align-items: center;
         flex-direction: column;
         .steps {
-          width: 63rem;
+          max-width: 63rem;
 
           .step {
             p {

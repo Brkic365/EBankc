@@ -48,22 +48,22 @@ function About() {
 
   const team = [
     {
-      img: "qin.png",
+      img: "qin.webp",
       name: "Mr. Qin Hauzheng",
       role: "CEO (Founder)",
     },
     {
-      img: "barrette.png",
+      img: "barrette.webp",
       name: "Barrette David",
       role: "CFO",
     },
     {
-      img: "reid.png",
+      img: "reid.webp",
       name: "Reid Adrian",
       role: "Director of client service",
     },
     {
-      img: "tesha.png",
+      img: "tesha.webp",
       name: "Tesha Denos",
       role: "Head of Institutional Lending",
     },
@@ -77,7 +77,6 @@ function About() {
           name="description"
           content="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         {/* Start Section */}
@@ -89,7 +88,7 @@ function About() {
             industry.
           </p>
           <img
-            src="/images/about/tablet_city.jpg"
+            src="/images/about/tablet_city.webp"
             alt="Image of technology and city"
           />
           <p>
