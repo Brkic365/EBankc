@@ -114,7 +114,7 @@ function Token() {
           <h1>EBankc Karma Program</h1>
           <p>
             The EBankc Karma is a reward program, which extends interest
-            depending on a user's verification level and the number of EBCT
+            depending on a {"user's"} verification level and the number of EBCT
             tokens the user holds in his EBankc wallet.
           </p>
           <h1 className={styles.development}>IN DEVELOPMENT</h1>
