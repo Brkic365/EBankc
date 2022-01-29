@@ -100,8 +100,8 @@ function Blog() {
           <h2>Tags</h2>
           <div className={styles.tagGrid}>
             {tags.map((tag, i) => (
-              <Link href={`/blog/tag?q=${tag}`}>
-                <div className={styles.tag} key={i}>
+              <Link href={`/blog/tag?q=${tag}`} key={i}>
+                <div className={styles.tag}>
                   <p>{tag}</p>
                 </div>
               </Link>
