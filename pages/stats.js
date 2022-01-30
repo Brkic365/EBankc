@@ -83,7 +83,10 @@ function Stats() {
     <div className={styles.stats}>
       <Head>
         <title>EBANKC - Stats</title>
-        <meta name="description" content="Login to your EBankc account" />
+        <meta
+          name="description"
+          content="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"
+        />
       </Head>
       <main className={styles.main}>
         {/* Start Section */}

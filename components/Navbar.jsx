@@ -95,6 +95,7 @@ function Navbar() {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
+  const [hoveringLink, setHoveringLink] = useState(null);
 
   const links = [
     {
@@ -143,7 +144,7 @@ function Navbar() {
       <motion.div
         className={styles.helpContainer}
         animate={helpOpen ? "open" : "closed"}
-        transition={{ duration: 0.3, type: "tween" }}
+        transition={{ duration: 0.5, type: "tween" }}
         variants={helpVariants}
       >
         <Help close={() => setHelpOpen(false)} />
@@ -188,10 +189,17 @@ function Navbar() {
         <div className={styles.links}>
           {links.map((link, i) => (
             <Link href={link.href} key={i}>
-              <div className={styles.link}>
+              <div
+                className={styles.link}
+                onMouseEnter={() => setHoveringLink(link.href)}
+                onMouseLeave={() => setHoveringLink(null)}
+              >
                 <a
                   className={
-                    router.pathname === link.href ? styles.open : undefined
+                    router.pathname.includes(link.href) ||
+                    hoveringLink === link.href
+                      ? styles.open
+                      : undefined
                   }
                 >
                   {link.name}
@@ -199,7 +207,10 @@ function Navbar() {
                 <motion.div
                   className={styles.linkUnderline}
                   animate={
-                    router.pathname === link.href ? "active" : "unactive"
+                    router.pathname.includes(link.href) ||
+                    hoveringLink === link.href
+                      ? "active"
+                      : "unactive"
                   }
                   transition={{ duration: 0.3, type: "tween" }}
                   variants={linkVariants}
