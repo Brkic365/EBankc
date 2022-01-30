@@ -35,8 +35,8 @@ function Faq() {
 
         <section className={styles.tags}>
           {tags.map((tag, i) => (
-            <Link href={`/faq/section?id=${tag.toLowerCase()}`}>
-              <div className={styles.tag} key={i}>
+            <Link href={`/faq/section?id=${tag.toLowerCase()}`} key={i}>
+              <div className={styles.tag} >
                 <p>{tag}</p>
               </div>
             </Link>
