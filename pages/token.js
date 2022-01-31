@@ -128,7 +128,7 @@ function Token() {
         {/* Start Section */}
 
         <section className={styles.start}>
-          <img src="/images/token/tokens.svg" alt="Icon of tokens" />
+          <img src="/images/token/tokens.webp" alt="Icon of tokens" />
           <div className={styles.content}>
             <h1>The EBCT Utility Token</h1>
             <h2>Level up with EBCT tokens</h2>
