@@ -14,7 +14,7 @@ function Login() {
     <div className={styles.login}>
       <Head>
         <title>EBANKC - Login</title>
-        <meta property="og:image" content="/images/navbar/logo.svg" />
+
         <meta name="description" content="Login to your EBankc account" />
       </Head>
       <div className={styles.box}>

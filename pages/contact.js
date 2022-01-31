@@ -8,7 +8,7 @@ function contact() {
     <div className={styles.contact}>
       <Head>
         <title>EBANKC - Contact</title>
-        <meta property="og:image" content="/images/navbar/logo.svg" />
+
         <meta
           name="description"
           content="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"
