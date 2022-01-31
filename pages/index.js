@@ -68,15 +68,6 @@ export default function Home() {
           name="description"
           content="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"
         />
-        <meta
-          property="og:image"
-          content="https://ebankc.netlify.app/images/meta_image.png"
-        />
-        <meta
-          property="twitter:image"
-          content="https://ebankc.netlify.app/images/meta_image.png"
-        />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>

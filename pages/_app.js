@@ -1,5 +1,7 @@
 import "../styles/globals.css";
 
+import Head from "next/head";
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -12,6 +14,17 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <meta
+          property="og:image"
+          content="https://ebankc.netlify.app/images/meta_image.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://ebankc.netlify.app/images/meta_image.png"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
       <Component {...pageProps} />
       {!noFooter.includes(router.pathname) && <Footer />}
