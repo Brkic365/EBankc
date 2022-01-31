@@ -42,7 +42,7 @@ function Post() {
         <BlogPost post={post} noBottomText={true} />
       </div>
       {postSections.map((section, i) => (
-        <section className={styles.textSection}>
+        <section className={styles.textSection} key={i}>
           {section.title && <h2>{section.title}</h2>}
           {section.text && <p>{section.text}</p>}
           {section.img && (
