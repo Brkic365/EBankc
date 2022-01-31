@@ -83,6 +83,7 @@ function Stats() {
     <div className={styles.stats}>
       <Head>
         <title>EBANKC - Stats</title>
+        <meta property="og:image" content="/images/navbar/logo.svg" />
         <meta
           name="description"
           content="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"

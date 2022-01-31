@@ -3,7 +3,11 @@ import styles from "../styles/Footer.module.scss";
 
 import Link from "next/link";
 
+import { useRouter } from "next/router";
+
 function Footer() {
+  const router = useRouter();
+
   const socialMedia = [
     {
       link: "https://twitter.com/home",
@@ -41,7 +45,7 @@ function Footer() {
       name: "Token",
     },
     {
-      link: "/corporate_clients",
+      link: "/corporates",
       name: "Corporate Clients",
     },
     {
@@ -54,10 +58,6 @@ function Footer() {
     {
       link: "/stats",
       name: "Stats",
-    },
-    {
-      link: "/news",
-      name: "News",
     },
     {
       link: "/blog",
@@ -86,14 +86,17 @@ function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.topText}>
-        <h2>Start Earning on your holdings</h2>
-        <p>Unlock daily interest on your cryptos with as little as $500.</p>
-        <p>Withdraw your assets whenever you want.</p>
-        <Link href="/signup">
-          <button>Sign Up</button>
-        </Link>
-      </div>
+      {!router.pathname.includes("/corporates") && (
+        <div className={styles.topText}>
+          <h2>Start Earning on your holdings</h2>
+          <p>Unlock daily interest on your cryptos with as little as $500.</p>
+          <p>Withdraw your assets whenever you want.</p>
+          <Link href="/signup">
+            <button>Sign Up</button>
+          </Link>
+        </div>
+      )}
+
       <img
         className={styles.logo}
         src="/images/navbar/logo.svg"

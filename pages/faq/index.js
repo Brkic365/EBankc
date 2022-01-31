@@ -16,6 +16,7 @@ function Faq() {
     <div className={styles.faq}>
       <Head>
         <title>EBANKC - FAQ</title>
+        <meta property="og:image" content="/images/navbar/logo.svg" />
         <meta
           name="description"
           content="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"
@@ -36,7 +37,7 @@ function Faq() {
         <section className={styles.tags}>
           {tags.map((tag, i) => (
             <Link href={`/faq/section?id=${tag.toLowerCase()}`} key={i}>
-              <div className={styles.tag} >
+              <div className={styles.tag}>
                 <p>{tag}</p>
               </div>
             </Link>

@@ -1,0 +1,66 @@
+.contact {
+  .main {
+    background: linear-gradient(0deg, #ffffff, hsla(0, 0%, 100%, 0) 100%),
+      url("../public/images/corporates/bg.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 1rem;
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .contactBox {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      background: white;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border-radius: 0.5rem;
+      width: 100%;
+      padding: 0.5rem;
+      cursor: pointer;
+
+      img {
+        width: 3rem;
+        margin-right: 0.5rem;
+      }
+
+      p {
+        color: #013220;
+        padding-left: 0.5rem;
+        border-left: 1px solid #01322034;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .contact {
+    .main {
+      padding: 15rem 2rem;
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.4rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      .contactBox {
+        margin-top: 2rem;
+        width: 20rem;
+
+        img {
+          width: 4rem;
+        }
+      }
+    }
+  }
+}

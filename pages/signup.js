@@ -15,6 +15,7 @@ function Signup() {
     <div className={styles.login}>
       <Head>
         <title>EBANKC - Sign Up</title>
+        <meta property="og:image" content="/images/navbar/logo.svg" />
         <meta name="description" content="Create your EBankc account" />
       </Head>
       <div className={styles.box}>

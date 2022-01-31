@@ -2,6 +2,8 @@ import React from "react";
 import Head from "next/head";
 import styles from "../styles/Token.module.scss";
 
+import Table from "../components/Table";
+
 function Token() {
   const earnStats = [
     {
@@ -58,10 +60,65 @@ function Token() {
 
   const tokenContract = "Oxf8688fD01B8e5ac811b0cA51Be1af08457aB602a";
 
+  const tableOneTitle =
+    "The EBankc Karma is a reward program, which extends interestdepending on a user's verification level and the number of EBCTtokens the user holds in his EBankc wallet";
+  const tableOneData = [
+    {
+      name: "USDC",
+      img: "usdc.webp",
+      levels: [3, 5, 7, 9],
+    },
+    {
+      name: "USDT",
+      img: "usdt.webp",
+      levels: [3, 5, 7, 9],
+    },
+    {
+      name: "BTC",
+      img: "btc.webp",
+      levels: [2, 4, 6, 8],
+    },
+    {
+      name: "ETH",
+      img: "eth.webp",
+      levels: [2, 4, 6, 8],
+    },
+    {
+      name: "EBCT",
+      img: "ebct.webp",
+      levels: [1, 2, 3, 4],
+    },
+    {
+      name: "ADA",
+      img: "ada.webp",
+      levels: [1, 2, 4, 6],
+    },
+    {
+      name: "BNB",
+      img: "bnb.webp",
+      levels: [1, 2, 4, 6],
+    },
+  ];
+
+  const tableTwoTitle = "Borrowing rates and karma level";
+  const tableTwoData = [
+    {
+      name: "USDT",
+      img: "usdt.webp",
+      levels: [8, 6, 4, 2],
+    },
+    {
+      name: "USDC",
+      img: "usdc.webp",
+      levels: [8, 6, 4, 2],
+    },
+  ];
+
   return (
     <div className={styles.token}>
       <Head>
         <title>EBANKC - Token</title>
+        <meta property="og:image" content="/images/navbar/logo.svg" />
         <meta
           name="description"
           content="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"
@@ -112,18 +169,8 @@ function Token() {
 
         <section className={styles.membership}>
           <h1>EBankc Karma Program</h1>
-          <p>
-            The EBankc Karma is a reward program, which extends interest
-            depending on a {"user's"} verification level and the number of EBCT
-            tokens the user holds in his EBankc wallet.
-          </p>
-          <h1 className={styles.development}>IN DEVELOPMENT</h1>
-          <div className={styles.tableOne}></div>
-          <p></p>
-          <div className={styles.tableOne}></div>
-          <p></p>
-          <div className={styles.tableOne}></div>
-          <p></p>
+          <Table title={tableOneTitle} data={tableOneData} />
+          <Table title={tableTwoTitle} data={tableTwoData} />
         </section>
 
         {/* How to Get Section */}

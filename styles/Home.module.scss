@@ -113,11 +113,20 @@
       }
     }
 
-    .earn {
+    .earn,
+    .borrow {
       margin-top: 4rem;
 
       p {
         margin-top: 1rem;
+      }
+    }
+
+    .borrow {
+      h5 {
+        font-size: 1rem;
+        margin-top: 2rem;
+        color: #013220;
       }
     }
 
@@ -222,13 +231,20 @@
 
       .earn,
       .utility,
-      .token {
+      .token,
+      .borrow {
         img {
           width: 50%;
         }
 
         .text {
           width: 70%;
+        }
+      }
+
+      .borrow {
+        h5 {
+          font-size: 1.3rem;
         }
       }
 
@@ -245,7 +261,8 @@
       .pros,
       .earn,
       .utility,
-      .token {
+      .token,
+      .borrow {
         flex-direction: row-reverse;
         place-content: space-between;
         width: 90%;
@@ -271,7 +288,7 @@
         }
       }
 
-      .earn,
+      .borrow,
       .token {
         flex-direction: row;
       }
@@ -350,7 +367,8 @@
       .pros,
       .earn,
       .utility,
-      .token {
+      .token,
+      .borrow {
         img {
           width: 40%;
         }
@@ -374,7 +392,8 @@
       .pros,
       .earn,
       .utility,
-      .token {
+      .token,
+      .borrow {
         width: 70%;
 
         img {
@@ -428,7 +447,8 @@
       .pros,
       .earn,
       .utility,
-      .token {
+      .token,
+      .borrow {
         width: 80%;
 
         .advantages {

@@ -8,10 +8,26 @@
     margin-bottom: 3rem;
   }
 
-  p {
-    text-align: center;
-    font-size: 1.1rem;
-    opacity: 0.8;
+  .textSection {
+    width: 100%;
+    text-align: left;
+
+    h2,
+    p,
+    img {
+      margin: 1rem 0;
+    }
+
+    p {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
   }
 }
 
@@ -21,8 +37,10 @@
     width: 50rem;
     margin: 0 auto;
 
-    p {
-      font-size: 1.4rem;
+    .textSection {
+      p {
+        font-size: 1.4rem;
+      }
     }
   }
 }

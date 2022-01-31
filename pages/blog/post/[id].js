@@ -1,43 +1,55 @@
 import React from "react";
 import styles from "../../../styles/Post.module.scss";
+import Head from "next/head";
 
 import BlogPost from "../../../components/BlogPost";
 
 function Post() {
   const post = {
-    title: "How stablecoins can help you increase ebtc in a bear market",
+    title: "What are the risks of DeFi and how can they be mitigated?",
     text: "Traditional and digital assets are in a bear market due to rising inflation and threat of interest rate hikes from the US Federal Reserve",
     img: "money.jpg",
   };
 
+  const postSections = [
+    {
+      title: "",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a ex ligula. Curabitur posuere quam at lacus luctus, nec ultricies leo ultricies. Proin ac efficitur nisi. Sed ut justo at nisl sagittis vehicula. Duis sodales a sem ac scelerisque. Vivamus rhoncus cursus enim mattis pharetra. Nulla placerat tortor varius, sagittis quam at, pretium neque. Nam vel posuere odio. Integer ut felis ut neque faucibus malesuada vel eget sapien. Donec justo quam, feugiat non libero eget, sagittis rutrum massa. In aliquam erat aliquam, rutrum lorem semper, facilisis nibh. Nunc semper placerat eros, vel commodo elit facilisis vel. Mauris id gravida mauris. Cras vehicula diam a consequat rutrum. Curabitur vitae tortor est. Mauris volutpat, urna id laoreet varius, elit quam sodales quam, vel accumsan lorem leo eu lorem. Nam vitae ipsum dolor. Phasellus pretium vestibulum nisl. Nunc quis commodo turpis, at auctor turpis. Aenean vel placerat ipsum. Fusce ultricies interdum malesuada.",
+      img: "money.jpg",
+    },
+    {
+      title: "Praesent convallis interdum ligula?",
+      text: "Praesent convallis interdum ligula, ac dapibus purus accumsan quis. Quisque vel velit libero. Proin tincidunt, diam a congue varius, purus lectus facilisis eros, eget lacinia orci ex suscipit lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla placerat at mauris consectetur ullamcorper. Duis ipsum massa, ornare at volutpat non, gravida nec nunc. Quisque posuere, massa eget cursus scelerisque, neque lacus placerat turpis, quis ultricies libero leo ut mi. Fusce in justo nulla. Mauris scelerisque consequat nibh vitae facilisis. Quisque consectetur lorem quis risus fermentum tincidunt. Praesent lobortis, tellus id tempor pharetra, felis arcu mollis magna, ac porttitor sapien libero a diam. Vestibulum arcu lacus, dapibus a leo quis, pulvinar tincidunt elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    },
+    {
+      title: "In elementum tempor nulla, vel bibendum sapien varius nec",
+      text: "In elementum tempor nulla, vel bibendum sapien varius nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras aliquet libero ut velit molestie facilisis. Phasellus suscipit suscipit laoreet. Praesent cursus posuere eleifend. Proin libero massa, hendrerit eu nisi et, eleifend convallis sapien. Cras ultricies mauris id purus hendrerit, in volutpat purus scelerisque. Fusce pretium tempor diam quis pharetra. Fusce accumsan dictum sem, vel efficitur erat malesuada vitae. Mauris sit amet finibus odio. Fusce sit amet mi diam. Etiam ac elit facilisis, varius ipsum nec, placerat libero. Nunc gravida accumsan magna non mollis. Phasellus maximus massa vitae sapien feugiat congue. In suscipit sagittis urna, eget euismod mi faucibus quis. Sed imperdiet egestas nunc, ut tincidunt dolor pharetra eget.",
+    },
+  ];
+
   return (
     <div className={styles.post}>
+      ¸
+      <Head>
+        <title>EBANKC - {post.title}</title>
+        <meta property="og:image" content="/images/navbar/logo.svg" />
+        <meta
+          name="description"
+          content="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"
+        />
+      </Head>
       <div className={styles.topBanner}>
         <BlogPost post={post} noBottomText={true} />
       </div>
-      <p>
-        In recent weeks, both digital asset and traditional markets have been
-        trending downwards. Investors across the globe have been spooked by
-        rising inflation and expectations of interest rate increases by the US
-        Federal Reserve, with stock markets and cryptocurrencies suffering as a
-        result. Stablecoins offer an alternative to investors looking to
-        continue making money, even in a bear market. In the US, for example,
-        inflation recently hit 7%. Meanwhile, despite the central bank
-        signalling plans to start raising interest rates, they will be going up
-        incrementally from a very low base {"–"} currently set at just 0-0.25%.
-        In short, parking one{"’"}s savings in a bank and forgetting about them
-        remains an unprofitable option, while market volatility makes investing
-        difficult. During times like these, it is particularly important to have
-        a strategy in place to continue protecting and growing your wealth. In
-        such market conditions, stablecoins could offer you an opportunity to
-        sit-out the volatility of other digital assets or stock markets, while
-        earning annual interest rates that can still comfortably beat inflation
-        in the developed world. As such, they can be a useful and important part
-        of any digital asset wealth strategy. Stablecoins are a lower volatility
-        alternative during bear markets, but they are not without risk. The
-        golden rule is to never allocate assets you cannot afford to lose to
-        digital asset strategies and always keep in mind the potential risks.
-      </p>
+      {postSections.map((section, i) => (
+        <section className={styles.textSection}>
+          {section.title && <h2>{section.title}</h2>}
+          {section.text && <p>{section.text}</p>}
+          {section.img && (
+            <img src={`/images/blog/${section.img}`} alt="Icon of text" />
+          )}
+        </section>
+      ))}
     </div>
   );
 }

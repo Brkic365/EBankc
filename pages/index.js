@@ -63,6 +63,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>EBANKC - Home</title>
+        <meta property="og:image" content="/images/navbar/logo.svg" />
         <meta
           name="description"
           content="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"
@@ -132,6 +133,21 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Borrow Section */}
+
+        <section className={styles.borrow}>
+          <img src="/images/home/hand_phone.webp" alt="Earn icon" />
+          <div className={styles.text}>
+            <h2>Borrow and Transact seamlessly</h2>
+            <h5>Borrow Stablecoins</h5>
+            <p>Collaterize your asset to borrow Stablecoins</p>
+            <h5>No origination Fees</h5>
+            <p>Transact seamlessly with no gas fees attached.</p>
+            <h5>No Downtime</h5>
+            <p>Carryout transaction 24/7 on the app</p>
+          </div>
+        </section>
+
         {/* Utility Section */}
 
         <section className={styles.utility}>
@@ -160,7 +176,9 @@ export default function Home() {
               <li>Boost your rewards</li>
               <li>Earn interest on your EBCT</li>
             </ul>
-            <button>Learn More</button>
+            <Link href="/token">
+              <button>Learn More</button>
+            </Link>
           </div>
         </section>
       </main>
