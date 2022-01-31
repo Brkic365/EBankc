@@ -70,7 +70,11 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://ebankc.netlify.app/images/logo_png.png"
+          content="https://ebankc.netlify.app/images/meta_image.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://ebankc.netlify.app/images/meta_image.png"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
