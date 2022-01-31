@@ -25,13 +25,13 @@ function MyApp({ Component, pageProps }) {
             "Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates",
           images: [
             {
-              url: "https://www.ebankc.netlify.app/images/meta_image.png",
+              url: "https://ebankc.netlify.app/images/meta_image.png",
             },
           ],
           site_name: "EBankc",
         }}
         twitter={{
-          cardType: "summary_large_image",
+          cardType: "https://ebankc.netlify.app/images/meta_image.png",
         }}
       />
       <Navbar />
