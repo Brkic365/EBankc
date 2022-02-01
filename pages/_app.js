@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
         description="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"
         openGraph={{
           url: "https://ebankc.netlify.app/",
-          description="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"
+          description="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates",
           title: "EBankc",
           images: [
             {
