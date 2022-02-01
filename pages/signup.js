@@ -12,13 +12,13 @@ function Signup() {
   const [confirmPassword, setConfirmPassword] = useState(null);
 
   return (
-    <div className={styles.login}>
+    <main className={styles.login}>
       <Head>
         <title>EBANKC - Sign Up</title>
 
         <meta name="description" content="Create your EBankc account" />
       </Head>
-      <div className={styles.box}>
+      <section className={styles.box}>
         <h2>SIGN UP</h2>
         <p>Create your EBankc account</p>
         <div className={styles.inputContainer}>
@@ -109,9 +109,9 @@ function Signup() {
             </span>
           </p>
         </div>
-      </div>
+      </section>
       <p>© 2022. All rights reserved.</p>
-    </div>
+    </main>
   );
 }
 

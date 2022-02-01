@@ -76,7 +76,7 @@ function Corporates() {
         {/* License Section */}
 
         <section className={styles.license}>
-          <img src="/images/corporates/shield.webp" alt="Icon of shield" />
+          <img src="/images/corporates/contract.webp" alt="Icon of contract" />
           <div className={styles.content}>
             <h5>Know Your Business</h5>
             <h2>Licensed and Regulated Defi System</h2>

@@ -157,7 +157,7 @@ function Stats() {
         {/* Community Section */}
 
         <section className={styles.community}>
-          <h2>Yield App Community</h2>
+          <h2>Ebankc Community</h2>
           <div className={styles.communityCircles}>
             {community.map((data, i) => (
               <div className={styles.communityCircle} key={i}>

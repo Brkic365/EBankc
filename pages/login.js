@@ -11,13 +11,13 @@ function Login() {
   const [password, setPassword] = useState(null);
 
   return (
-    <div className={styles.login}>
+    <main className={styles.login}>
       <Head>
         <title>EBANKC - Login</title>
 
         <meta name="description" content="Login to your EBankc account" />
       </Head>
-      <div className={styles.box}>
+      <section className={styles.box}>
         <h2>LOG IN</h2>
         <p>Log in with your credentials</p>
         <div className={styles.inputContainer}>
@@ -74,9 +74,9 @@ function Login() {
             </span>
           </p>
         </div>
-      </div>
+      </section>
       <p>© 2022. All rights reserved.</p>
-    </div>
+    </main>
   );
 }
 
