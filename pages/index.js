@@ -63,7 +63,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>EBANKC - Home</title>
-
         <meta
           name="description"
           content="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"

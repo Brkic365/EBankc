@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <NextSeo
         defaultTitle="EBANKC"
+        description="Unlocking the power of Defi-Banking | Earn Interest, borrow, and exchange digital assets at competitive rates"
         openGraph={{
           url: "https://ebankc.netlify.app/",
           title: "EBankc",
