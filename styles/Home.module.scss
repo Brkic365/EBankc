@@ -226,45 +226,43 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .container {
-    .main {
-      .pros {
-        img {
-          width: 50%;
-        }
-
-        .advantages {
-          width: 80%;
-        }
+  .container .main {
+    .pros {
+      img {
+        width: 50%;
       }
 
-      .earn,
-      .utility,
-      .token,
-      .borrow {
-        img {
-          width: 50%;
-          margin-bottom: 1rem;
-        }
+      .advantages {
+        width: 80%;
+      }
+    }
 
-        .text {
-          width: 70%;
-        }
+    .earn,
+    .utility,
+    .token,
+    .borrow {
+      img {
+        width: 50%;
+        margin-bottom: 1rem;
       }
 
-      .borrow {
-        h5 {
-          font-size: 1.3rem;
-        }
+      .text {
+        width: 70%;
       }
+    }
 
-      .token img {
-        width: 30%;
+    .borrow {
+      h5 {
+        font-size: 1.3rem;
       }
+    }
 
-      .utility img {
-        width: 40%;
-      }
+    .token img {
+      width: 30%;
+    }
+
+    .utility img {
+      width: 40%;
     }
   }
 }
