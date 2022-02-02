@@ -88,10 +88,7 @@ function About() {
             EBankc is the most rewarding and secured institution in the DeFi
             industry.
           </p>
-          <img
-            src="/images/about/tablet_city.webp"
-            alt="Image of technology and city"
-          />
+          <img src="/images/about/buildings.webp" alt="Image of buildings" />
           <p>
             Mr. Qin Huazheng founded EBankc on the 9th of March 2020 to solve
             inefficiency within the DeFi industry. So far, {"we've"} endeavored

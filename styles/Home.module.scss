@@ -235,6 +235,7 @@
       .borrow {
         img {
           width: 50%;
+          margin-bottom: 1rem;
         }
 
         .text {
@@ -268,7 +269,8 @@
         width: 90%;
         margin: 4rem auto;
         img {
-          width: 50%;
+          width: 40%;
+          margin-bottom: 0;
         }
 
         .advantages {
@@ -394,10 +396,11 @@
       .utility,
       .token,
       .borrow {
+        margin: 10rem auto;
         width: 70%;
 
         img {
-          width: 50%;
+          width: 40%;
         }
       }
 

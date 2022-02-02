@@ -120,7 +120,7 @@ export default function Home() {
         {/* Earn Section */}
 
         <section className={styles.earn}>
-          <img src="/images/home/earn.webp" alt="Earn icon" />
+          <img src="/images/home/earn.svg" alt="Earn icon" />
           <div className={styles.text}>
             <h2>Earn short term Interest</h2>
             <h4>Increase your reward level by holding more EBCT token</h4>
@@ -134,7 +134,7 @@ export default function Home() {
         {/* Borrow Section */}
 
         <section className={styles.borrow}>
-          <img src="/images/home/hand_phone.webp" alt="Earn icon" />
+          <img src="/images/home/online.svg" alt="Online icon" />
           <div className={styles.text}>
             <h2>Borrow and Transact seamlessly</h2>
             <h5>Borrow Stablecoins</h5>
@@ -149,7 +149,7 @@ export default function Home() {
         {/* Utility Section */}
 
         <section className={styles.utility}>
-          <img src="/images/home/safe.webp" alt="Safe icon" />
+          <img src="/images/home/credit_card.svg" alt="Credit Card icon" />
           <div className={styles.text}>
             <h2>Integrated Utility Card</h2>
             <h4>EBankc Card (coming soon)</h4>
