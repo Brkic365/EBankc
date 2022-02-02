@@ -47,7 +47,8 @@
     }
 
     img {
-      width: 100%;
+      width: 70%;
+      margin-bottom: 1rem;
     }
 
     section {
@@ -57,6 +58,10 @@
     }
 
     .start {
+      img {
+        width: 100%;
+      }
+
       .content {
         display: flex;
         align-items: center;
@@ -132,6 +137,10 @@
 
     .utility {
       margin-top: 4rem;
+
+      img {
+        width: 50%;
+      }
 
       p {
         margin: 0.5rem 0;
@@ -252,6 +261,10 @@
       .token img {
         width: 30%;
       }
+
+      .utility img {
+        width: 40%;
+      }
     }
   }
 }
@@ -296,6 +309,10 @@
       }
 
       .token img {
+        width: 35%;
+      }
+
+      .utility img {
         width: 35%;
       }
     }
@@ -376,7 +393,8 @@
         }
       }
 
-      .token img {
+      .token img,
+      .utility img {
         width: 30%;
       }
     }
@@ -472,6 +490,10 @@
             }
           }
         }
+      }
+
+      .utility img {
+        width: 35%;
       }
 
       .pros img {
