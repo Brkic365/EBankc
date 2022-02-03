@@ -40,8 +40,8 @@ export function MobileMenu({ links, close }) {
       />
       <ul>
         {links.map((link, i) => (
-          <li>
-            <Link href={link.href} key={i}>
+          <li key={i}>
+            <Link href={link.href}>
               <a onClick={() => close(true)}>{link.name}</a>
             </Link>
           </li>
