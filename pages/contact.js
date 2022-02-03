@@ -17,7 +17,7 @@ function contact() {
       <main className={styles.main}>
         <h1>Contact</h1>
         <p>Get in touch with our team</p>
-        <Link href="mailto:makifrane@gmail.com">
+        <Link href="">
           <div className={styles.contactBox}>
             <img src="/images/navbar/logo.svg" alt="Logo icon" />
             <p>info@ebankc.app</p>

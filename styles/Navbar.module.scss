@@ -57,15 +57,6 @@
     }
   }
 
-  .helpContainer {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    right: 0;
-    top: 0;
-    opacity: 0;
-  }
-
   .mobileMenuContainer {
     position: fixed;
     width: 90%;
@@ -291,29 +282,6 @@
 @media only screen and(min-width: 1500px) {
   .nav {
     padding: 1rem 10%;
-
-    .help {
-      border-radius: 1.5rem;
-      width: fit-content;
-      display: flex;
-      align-items: center;
-      padding: 0.5rem 1.5rem;
-
-      img {
-        width: 1.5rem;
-        left: 0;
-        top: 0;
-        transform: translate(0, 0);
-      }
-
-      p {
-        display: block;
-        color: white;
-        font-weight: bold;
-        font-size: 1.1rem;
-        margin-left: 0.4rem;
-      }
-    }
   }
 }
 

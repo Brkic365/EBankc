@@ -4,11 +4,9 @@ import styles from "../styles/Navbar.module.scss";
 
 import { useRouter } from "next/router";
 
-import { Help } from "./Help";
-
 import { motion } from "framer-motion";
 
-export function MobileMenu({ close }) {
+export function MobileMenu({ links, close }) {
   const socialMedia = [
     {
       link: "https://t.me/+34KPqqtdgA5hMzEx",
@@ -41,36 +39,13 @@ export function MobileMenu({ close }) {
         onClick={() => close(true)}
       />
       <ul>
-        <li>
-          <Link href="/about">
-            <a onClick={() => close(true)}>About</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/token">
-            <a onClick={() => close(true)}>Token</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/corporates">
-            <a onClick={() => close(true)}>Corporates</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/blog">
-            <a onClick={() => close(true)}>Blog</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/stats">
-            <a onClick={() => close(true)}>Stats</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/faq">
-            <a onClick={() => close(true)}>FAQ</a>
-          </Link>
-        </li>
+        {links.map((link, i) => (
+          <li>
+            <Link href={link.href} key={i}>
+              <a onClick={() => close(true)}>{link.name}</a>
+            </Link>
+          </li>
+        ))}
       </ul>
       <div className={styles.social_media}>
         {socialMedia.map((media, i) => (
@@ -92,7 +67,6 @@ function Navbar() {
   const router = useRouter();
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [helpOpen, setHelpOpen] = useState(false);
   const [hoveringLink, setHoveringLink] = useState(null);
 
   const links = [
@@ -117,6 +91,10 @@ function Navbar() {
       href: "/stats",
     },
     {
+      name: "EBCT Presale",
+      href: "/presale",
+    },
+    {
       name: "FAQ",
       href: "/faq",
     },
@@ -127,11 +105,6 @@ function Navbar() {
     closed: { opacity: 0, x: "100%" },
   };
 
-  const helpVariants = {
-    open: { opacity: 1, y: 0 },
-    closed: { opacity: 0, y: "100%" },
-  };
-
   const linkVariants = {
     active: { opacity: 1, y: 0 },
     unactive: { opacity: 0, y: "100%" },
@@ -139,22 +112,11 @@ function Navbar() {
 
   return (
     <div className={styles.nav}>
-      <motion.div
-        className={styles.helpContainer}
-        animate={helpOpen ? "open" : "closed"}
-        transition={{ duration: 0.5, type: "tween" }}
-        variants={helpVariants}
-      >
-        <Help close={() => setHelpOpen(false)} />
-      </motion.div>
-      <div
-        className={styles.help}
-        onClick={() => setHelpOpen(true)}
-        style={{ opacity: helpOpen ? 0 : 1 }}
-      >
-        <img src="/images/footer/help.svg" alt="Icon of help" />
-        <p>Help</p>
-      </div>
+      <Link href="/">
+        <div className={styles.help}>
+          <img src="/images/footer/help.svg" alt="Icon of help" />
+        </div>
+      </Link>
 
       <div className={styles.left}>
         <Link href="/">
@@ -181,7 +143,7 @@ function Navbar() {
           transition={{ duration: 0.3, type: "tween" }}
           variants={mobileMenuVariants}
         >
-          <MobileMenu close={() => setMobileMenuOpen(false)} />
+          <MobileMenu close={() => setMobileMenuOpen(false)} links={links} />
         </motion.div>
 
         <div className={styles.links}>
