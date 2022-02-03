@@ -227,6 +227,14 @@
 
 @media only screen and (min-width: 600px) {
   .container .main {
+    padding-top: 10rem;
+
+    .start {
+      img {
+        width: 60%;
+      }
+    }
+
     .pros {
       img {
         width: 50%;

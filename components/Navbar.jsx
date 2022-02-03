@@ -11,24 +11,24 @@ import { motion } from "framer-motion";
 export function MobileMenu({ close }) {
   const socialMedia = [
     {
-      link: "https://twitter.com/home",
+      link: "https://t.me/+34KPqqtdgA5hMzEx",
+      img: "/images/footer/social_media/telegram.svg",
+    },
+    {
+      link: "https://twitter.com/EBankc_DeFi",
       img: "/images/footer/social_media/twitter.svg",
     },
     {
-      link: "https://www.instagram.com/",
-      img: "/images/footer/social_media/instagram.svg",
+      link: "https://www.linkedin.com/company/ebankcdefi",
+      img: "/images/footer/social_media/linked_in.svg",
     },
     {
-      link: "https://www.reddit.com/",
-      img: "/images/footer/social_media/reddit.svg",
-    },
-    {
-      link: "https://www.youtube.com/",
-      img: "/images/footer/social_media/youtube.svg",
-    },
-    {
-      link: "https://discord.com/",
+      link: "https://discord.gg/2aarRRgGTt",
       img: "/images/footer/social_media/discord.svg",
+    },
+    {
+      link: "https://youtube.com/channel/UCHT0_rPmWU7GVgH29X65o9g",
+      img: "/images/footer/social_media/youtube.svg",
     },
   ];
 
@@ -74,13 +74,11 @@ export function MobileMenu({ close }) {
       </ul>
       <div className={styles.social_media}>
         {socialMedia.map((media, i) => (
-          <Link key={i} href={media.link}>
-            <img
-              onClick={() => close(true)}
-              src={media.img}
-              alt="Icon of social media"
-            />
-          </Link>
+          <a target="_blank" key={i} href={media.link}>
+            <div className={styles.imageContainer}>
+              <img src={media.img} alt="Icon of social media" />
+            </div>
+          </a>
         ))}
       </div>
       <Link href="/login">

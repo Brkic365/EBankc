@@ -112,7 +112,7 @@
       }
 
       .social_media {
-        margin: 2rem 0;
+        margin: 2rem auto;
         width: 90%;
         display: -ms-grid;
         display: grid;
@@ -127,9 +127,27 @@
         grid-column-gap: 1em;
         grid-row-gap: 1em;
 
-        img {
+        .imageContainer {
+          width: 2.5rem;
+          height: 2.5rem;
+          background: #f3f3f3;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
           cursor: pointer;
-          width: 100%;
+
+          transition: 0.3s ease-in-out;
+
+          img {
+            width: 40%;
+            position: absolute;
+          }
+
+          &:hover {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          }
         }
       }
     }
@@ -197,11 +215,17 @@
 @media only screen and(min-width: 900px) {
   .nav {
     .mobileMenuContainer .mobileMenu {
+      width: 50%;
       .social_media {
         max-width: 24rem;
         margin: 3rem auto;
         -ms-grid-columns: (minmax(3em, 4em)) [auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(3em, 4em));
+
+        .imageContainer {
+          width: 3rem;
+          height: 3rem;
+        }
       }
     }
   }
