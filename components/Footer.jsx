@@ -104,7 +104,7 @@ function Footer() {
       />
       <div className={styles.social_media}>
         {socialMedia.map((media, i) => (
-          <a key={i} target="_blank" href={media.link}>
+          <a key={i} target="_blank" rel="noreferrer" href={media.link}>
             <div className={styles.imageContainer}>
               <img src={media.img} alt="Icon of social media" />
             </div>

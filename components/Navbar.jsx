@@ -74,7 +74,7 @@ export function MobileMenu({ close }) {
       </ul>
       <div className={styles.social_media}>
         {socialMedia.map((media, i) => (
-          <a target="_blank" key={i} href={media.link}>
+          <a target="_blank" rel="noreferrer" key={i} href={media.link}>
             <div className={styles.imageContainer}>
               <img src={media.img} alt="Icon of social media" />
             </div>
