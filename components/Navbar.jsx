@@ -28,6 +28,10 @@ export function MobileMenu({ links, close }) {
       link: "https://youtube.com/channel/UCHT0_rPmWU7GVgH29X65o9g",
       img: "/images/footer/social_media/youtube.svg",
     },
+    {
+      link: "https://medium.com/@ebankcdefi",
+      img: "/images/footer/social_media/medium.svg",
+    },
   ];
 
   return (
