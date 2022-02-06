@@ -96,7 +96,7 @@ function Navbar() {
     },
     {
       name: "EBCT Presale",
-      href: "/presale",
+      href: "https://ebctsale.com/",
     },
     {
       name: "FAQ",
