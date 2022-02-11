@@ -60,7 +60,7 @@ export function MobileMenu({ links, close }) {
           </a>
         ))}
       </div>
-      <Link href="/login">
+      <Link href="https://ebankcapp.netlify.app/">
         <button onClick={() => close(true)}>Log In</button>
       </Link>
     </div>
@@ -182,7 +182,7 @@ function Navbar() {
               </div>
             </Link>
           ))}
-          <Link href="/login">
+          <Link href="https://ebankcapp.netlify.app/">
             <button>Log In</button>
           </Link>
         </div>
