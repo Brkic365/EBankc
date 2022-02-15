@@ -12,19 +12,19 @@ function Table({ title, data }) {
           </div>
           <div className={styles.block}>
             <h3>Karma level 1</h3>
-            <p>(0 - 4,999EBTC)</p>
+            <p>(0 - 49,999EBTC)</p>
           </div>
           <div className={styles.block}>
             <h3>Karma level 2</h3>
-            <p>(5,000 - 19,000EBTC)</p>
+            <p>(50,000 - 199,999EBTC)</p>
           </div>
           <div className={styles.block}>
             <h3>Karma level 3</h3>
-            <p>(20,000 - 100,000EBTC)</p>
+            <p>(200,000 - 1,000,000EBTC)</p>
           </div>
           <div className={styles.block}>
             <h3>Karma level 4</h3>
-            <p>(100,000+ EBTC)</p>
+            <p>(1,000,000+ EBTC)</p>
           </div>
         </div>
         {data.map((row, i) => (
